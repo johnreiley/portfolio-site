@@ -25,7 +25,7 @@ export class ProfileComponent implements OnInit {
       image: "https://www.nbcot.org/-/media/NBCOT/Aspire/aspire_flashcards_icon.ashx",
       imgAlt: "Studygorize icon",
       title: "Studygorize",
-      description: "A web app for studying table-like structures of information.",
+      description: "A web app for studying tabled structures of information.",
       tags: [this.icons["angular"], this.icons["firebase"], this.icons["scss"]]
     },
     {
@@ -56,36 +56,22 @@ export class ProfileComponent implements OnInit {
       tags: [this.icons["php"], this.icons["postgresql"], this.icons["htmlCssJavascript"]]
     },
     {
-      url: "",
-      image: "",
-      imgAlt: "",
-      title: "",
-      description: "",
-      tags: [""]
+      url: "https://github.com/johnreiley/vehctra",
+      image: "/assets/vehctra.png",
+      imgAlt: "Vehctra icon",
+      title: "Vehctra: Vehicle Care Tracker",
+      description: `An unfinished web app designed to allow vehicle owners to store vehicle information and history such as
+      services and fuel-ups. Made for the second half of Web Engineering II in 6 weeks.`,
+      tags: [this.icons["nodejs"], this.icons["firebase"], this.icons["htmlCssJavascript"]]
     },
     {
-      url: "",
-      image: "",
-      imgAlt: "",
-      title: "",
-      description: "",
-      tags: [""]
-    },
-    {
-      url: "",
-      image: "",
-      imgAlt: "",
-      title: "",
-      description: "",
-      tags: [""]
-    },
-    {
-      url: "",
-      image: "",
-      imgAlt: "",
-      title: "",
-      description: "",
-      tags: [""]
+      url: "https://github.com/supermormon/fs-fullscreen-file-viewer",
+      image: "/assets/family_fullscreen.png",
+      imgAlt: "family search fs file viewer icon",
+      title: "Fullscreen Family Search Record Viewer Extension",
+      description: `An Chrome extension that adds a toggle to hide
+      the navigation when viewing scanned records on familysearch.org.`,
+      tags: [this.icons["htmlCssJavascript"]]
     },
   ]
 
