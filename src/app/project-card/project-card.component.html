@@ -1,0 +1,18 @@
+<li class="card project mb-3">
+  <a [href]="project?.url" target="_blank">
+    <div class="proj-content">
+      <img class="proj-img" [src]="project?.image" [alt]="project?.imgAlt">
+      <h4 class="title">{{ project?.title }}</h4>
+      <p class="desc">
+        {{ project?.description }}
+      </p>
+    </div>
+    <div class="card-footer">
+      <ul class="tags">
+        <li *ngFor="let tag of project?.tags" class="badge badge-light">
+          <img [src]="tag">
+        </li>
+      </ul>
+    </div>
+  </a>
+</li>

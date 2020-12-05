@@ -1,0 +1,97 @@
+<main>
+  <div class="accent-stripe"></div>
+  <div class="profile">
+    <div class="row">
+      <div class="col">
+        <img class="profile-img" src="../../assets/John-pro-better-blue.png" alt="">
+      </div>
+    </div>
+    <h3 class="profile-name">John Reiley</h3>
+    <div class="profile-sub">Full-Stack Web Developer</div>
+    <div class="row">
+      <div class="col">
+        <div class="accordion" id="profileContent">
+
+          <div class="card">
+            <div class="card-header" id="aboutMe">
+              <h2 class="mb-0">
+                <button class="btn btn-block text-left icon-btn" type="button" data-toggle="collapse" data-target="#aboutMeContent" aria-expanded="true" aria-controls="aboutMeContent">
+                  <i class="material-icons">import_contacts</i>
+                  About me
+                </button>
+              </h2>
+            </div>
+            <div id="aboutMeContent" class="show collapse" aria-labelledby="aboutMe" data-parent="#profileContent">
+              <div class="card-body">
+                I'm currently studying software engineering at Brigham Young University-Idaho with interest in full-stack web development.
+                I'm passionate about learning, gaining new experience, and helping others succeed. I find that some of life's most 
+                enjoyable experiences come from working together with others on something difficult as a team and coming out together 
+                on the other side. 
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="skills">
+              <h2 class="mb-0">
+                <button class="btn btn-block text-left icon-btn collapsed" type="button" data-toggle="collapse" data-target="#skillsContent" aria-expanded="false" aria-controls="skillsContent">
+                  <i class="material-icons">flash_on</i>
+                  Technical skills
+                </button>
+              </h2>
+            </div>
+            <div id="skillsContent" class="collapse" aria-labelledby="skills" data-parent="#profileContent">
+              <div class="card-body">
+                <ul>
+                  <li>Angular, ASP.NET</li>
+                  <li>JavaScript</li>
+                  <li>HTML, CSS, SCSS, Bootstrap</li>
+                  <li>Node.js, Firebase</li>
+                  <li>PostgreSQL, MSSQL</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="projects">
+              <h2 class="mb-0">
+                <button class="btn btn-block text-left icon-btn collapsed" type="button" data-toggle="collapse" data-target="#projectsContent" aria-expanded="false" aria-controls="projectsContent">
+                  <i class="material-icons">computer</i>
+                  Projects
+                </button>
+              </h2>
+            </div>
+            <div id="projectsContent" class="collapse" aria-labelledby="projects" data-parent="#profileContent">
+              <div class="card-body">
+                <ul class="projects">
+                  <app-project-card *ngFor="let project of projects" [project]="project"></app-project-card>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="contact">
+              <h2 class="mb-0">
+                <button class="btn btn-block text-left icon-btn collapsed" type="button" data-toggle="collapse" data-target="#contactContent" aria-expanded="false" aria-controls="contactContent">
+                  <i class="material-icons">alternate_email</i>
+                  Info
+                </button>
+              </h2>
+            </div>
+            <div id="contactContent" class="collapse" aria-labelledby="contact" data-parent="#profileContent">
+              <div class="card-body">
+                <a class="btn btn-outline-primary" href="https://www.linkedin.com/in/john-reiley-391862151/" target="_blank">LinkedIn</a>
+                <a class="btn btn-outline-dark" href="https://github.com/johnreiley" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="mb-3 text-center">
+      <small class="text-muted">John Reiley - Copyright ©{{ year }}</small>
+    </footer>
+  </div>
+</main>
