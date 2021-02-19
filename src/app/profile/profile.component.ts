@@ -18,14 +18,23 @@ export class ProfileComponent implements OnInit {
     scss: "/assets/scss.png",
     bootstrap: "/assets/boostrap.png",
     nodejs: "/assets/nodejs.png",
+    react: "/assets/react-crop.png",
+    socketIo: "/assets/socket-io.svg",
   }
+  skills: string[] = [
+    "Angular", "TypeScript",
+    "HTML", "CSS3", "JavaScript",
+    "C#", ".NET Core", "ASP.NET",
+    "Node.js", "Firebase",
+    "MSSQL", "Git"
+  ]
   projects: Project[] = [
     {
       url: "https://github.com/johnreiley/Studygorize",
-      image: "https://www.nbcot.org/-/media/NBCOT/Aspire/aspire_flashcards_icon.ashx",
+      image: "/assets/studygorize.png",
       imgAlt: "Studygorize icon",
       title: "Studygorize",
-      description: "A web app for studying tabled structures of information.",
+      description: "An Angular web app for studying tabled structures of information.",
       tags: [this.icons["angular"], this.icons["firebase"], this.icons["scss"]]
     },
     {
@@ -33,9 +42,16 @@ export class ProfileComponent implements OnInit {
       image: "/assets/recipe_drawer_2.png",
       imgAlt: "Recipe Drawer Icon",
       title: "Recipe Drawer",
-      description: `A web app for storing recipes, building a shopping list, and 
-      meal planning. It is currently under construction 🛠`,
+      description: `An Angular web app for storing recipes and building a shopping list for personal use.`,
       tags: [this.icons["angular"], this.icons["firebase"], this.icons["nodejs"], this.icons["scss"]]
+    },
+    {
+      url: "https://github.com/johnreiley/draw-together",
+      image: "/assets/draw-together.png",
+      imgAlt: "Draw Together Icon",
+      title: "Draw Together",
+      description: `An web app I wrote while learning React and Socket.io that allows friends and family to draw together online.`,
+      tags: [this.icons["react"], this.icons["socketIo"], this.icons["nodejs"]]
     },
     {
       url: "https://github.com/johnreiley/mc-server-manager",

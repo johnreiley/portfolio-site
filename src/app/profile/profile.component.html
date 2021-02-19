@@ -42,12 +42,8 @@
             </div>
             <div id="skillsContent" class="collapse" aria-labelledby="skills" data-parent="#profileContent">
               <div class="card-body">
-                <ul>
-                  <li>Angular, ASP.NET</li>
-                  <li>JavaScript</li>
-                  <li>HTML, CSS, SCSS, Bootstrap</li>
-                  <li>Node.js, Firebase</li>
-                  <li>PostgreSQL, MSSQL</li>
+                <ul id="skills-list">
+                  <li *ngFor="let skill of skills">{{skill}}</li>
                 </ul>
               </div>
             </div>
@@ -91,7 +87,7 @@
       </div>
     </div>
     <footer class="mb-3 text-center">
-      <small class="text-muted">John Reiley - Copyright ©{{ year }}</small>
+      <small class="text-muted">John Reiley - © {{ year }}</small>
     </footer>
   </div>
 </main>
